@@ -1,0 +1,38 @@
+CREATE DATABASE IF NOT EXISTS ocr;
+    USE ocr;
+
+CREATE TABLE inspection_records (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    filename VARCHAR(255),              
+    InspectionTimePoint VARCHAR(50),    
+    Specification VARCHAR(255),         
+    Material VARCHAR(100),              
+    WorkOrderNo VARCHAR(100),           
+    Customer VARCHAR(100),              
+    StripWidth VARCHAR(50),             
+    StripThickness VARCHAR(50),         
+    Current VARCHAR(50),                
+    Voltage VARCHAR(50),                
+    WeldingSpeed VARCHAR(50),           
+    AnnealingTemp VARCHAR(50),          
+    WeldSeam VARCHAR(50),               
+    WeldSeamAppearance VARCHAR(50),     
+    Sizing_Da VARCHAR(50),              
+    Sizing_Db VARCHAR(50),              
+    SizingRate VARCHAR(50),             
+    OD_Upper VARCHAR(50),               
+    OD_Lower VARCHAR(50),               
+    Roundness VARCHAR(50),              
+    Appearance VARCHAR(50),             
+    Length VARCHAR(50),                 
+    Straightness VARCHAR(50),           
+    PortVerticality VARCHAR(50),        
+    BevelAngle VARCHAR(50),             
+    RootFace VARCHAR(50),               
+    BendFlattening VARCHAR(50),         
+    Judgement VARCHAR(100),             
+    QA_Manager VARCHAR(50),             
+    Production_Manager VARCHAR(50),     
+    Inspector VARCHAR(50),              
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
